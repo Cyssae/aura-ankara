@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Ankara | The Collection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e3e3de",
+                    "background": "#fafaf5",
+                    "secondary-container": "#fed488",
+                    "on-primary-fixed": "#390c00",
+                    "primary-fixed-dim": "#ffb59d",
+                    "surface-container-highest": "#e3e3de",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-surface-variant": "#57423b",
+                    "outline": "#8b716a",
+                    "surface-dim": "#dadad5",
+                    "on-secondary-container": "#785a1a",
+                    "outline-variant": "#dec0b7",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#65747f",
+                    "tertiary-fixed": "#d5e5f1",
+                    "on-tertiary-fixed-variant": "#3a4953",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e8e8e3",
+                    "on-tertiary-container": "#f3f9ff",
+                    "surface": "#fafaf5",
+                    "surface-container-low": "#f4f4ef",
+                    "primary-fixed": "#ffdbd0",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#ffdea5",
+                    "tertiary": "#4c5c66",
+                    "inverse-on-surface": "#f1f1ec",
+                    "on-tertiary-fixed": "#0e1d26",
+                    "inverse-primary": "#ffb59d",
+                    "surface-container": "#eeeee9",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#fff7f5",
+                    "inverse-surface": "#2f312e",
+                    "secondary": "#775a19",
+                    "on-primary-fixed-variant": "#832700",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-tint": "#a53c14",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#261900",
+                    "primary": "#9e370f",
+                    "on-surface": "#1a1c19",
+                    "on-background": "#1a1c19",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#b9c9d5",
+                    "primary-container": "#bf4f26",
+                    "surface-bright": "#fafaf5",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-container">
+<!-- Marquee Announcement -->
+<div class="bg-primary text-on-primary py-2 overflow-hidden sticky top-0 z-[60]">
+<div class="marquee-container flex items-center">
+<div class="marquee-content uppercase tracking-[0.2em] text-[10px] font-bold">
+                Limited-time pre-order for the next collection starts now — Secure your heritage piece today — Exclusive designs for the modern curator — Limited-time pre-order for the next collection starts now — Secure your heritage piece today — Exclusive designs for the modern curator —
+            </div>
+<div class="marquee-content uppercase tracking-[0.2em] text-[10px] font-bold">
+                Limited-time pre-order for the next collection starts now — Secure your heritage piece today — Exclusive designs for the modern curator — Limited-time pre-order for the next collection starts now — Secure your heritage piece today — Exclusive designs for the modern curator —
+            </div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-10 w-full z-50 bg-[#fafaf5]/80 backdrop-blur-xl transition-colors duration-300 ease-linear">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#775a19]">Aura Ankara</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-serif tracking-tight text-stone-600 hover:text-[#775a19] transition-colors duration-300" href="#">Home</a>
+<a class="font-serif tracking-tight text-[#9e370f] border-b-2 border-[#9e370f] pb-1 transition-colors duration-300" href="#">Shop</a>
+<a class="font-serif tracking-tight text-stone-600 hover:text-[#775a19] transition-colors duration-300" href="#">Trustees</a>
+<a class="font-serif tracking-tight text-stone-600 hover:text-[#775a19] transition-colors duration-300" href="#">Events</a>
+<a class="font-serif tracking-tight text-stone-600 hover:text-[#775a19] transition-colors duration-300" href="#">Bookings</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-stone-900"><span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span></button>
+<button class="text-stone-900"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+</div>
+</div>
+</nav>
+<main class="pt-40 pb-24 px-12 max-w-screen-2xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-12">
+<div class="max-w-3xl">
+<p class="text-primary font-bold tracking-widest uppercase text-xs mb-4">Curated Heritage</p>
+<h1 class="text-6xl md:text-8xl font-serif tracking-tighter leading-[0.9] text-on-background">
+                    The Collection:<br/>
+<span class="italic text-secondary">Aura Heritage</span>
+</h1>
+</div>
+<div class="md:w-1/3 text-stone-500 font-light leading-relaxed">
+                Exploring the intersection of ancestral craftsmanship and modernist silhouettes. Each piece is a canvas of cultural storytelling, designed for the discerning global citizen.
+            </div>
+</header>
+<div class="flex flex-col lg:flex-row gap-16">
+<!-- Sidebar Filter -->
+<aside class="lg:w-64 flex-shrink-0">
+<div class="sticky top-48">
+<h3 class="font-serif text-xl mb-8 border-b border-outline-variant/20 pb-4">Categories</h3>
+<ul class="space-y-6">
+<li>
+<button class="group flex items-center justify-between w-full text-left">
+<span class="uppercase tracking-widest text-xs font-bold text-primary">Women's Wear</span>
+<span class="text-[10px] text-stone-400">12 Items</span>
+</button>
+</li>
+<li>
+<button class="group flex items-center justify-between w-full text-left">
+<span class="uppercase tracking-widest text-xs font-bold text-stone-500 group-hover:text-primary transition-colors">Men's Wear</span>
+<span class="text-[10px] text-stone-400">08 Items</span>
+</button>
+</li>
+<li>
+<button class="group flex items-center justify-between w-full text-left">
+<span class="uppercase tracking-widest text-xs font-bold text-stone-500 group-hover:text-primary transition-colors">Accessories</span>
+<span class="text-[10px] text-stone-400">15 Items</span>
+</button>
+</li>
+<li>
+<button class="group flex items-center justify-between w-full text-left">
+<span class="uppercase tracking-widest text-xs font-bold text-stone-500 group-hover:text-primary transition-colors">Bespoke</span>
+<span class="text-[10px] text-stone-400">Consult</span>
+</button>
+</li>
+</ul>
+<div class="mt-20 p-8 bg-surface-container-low border-l-4 border-primary">
+<p class="text-xs uppercase tracking-widest font-bold mb-4">Sustainability</p>
+<p class="text-[11px] text-stone-500 leading-relaxed italic">
+                            All fabrics are sourced directly from artisan guilds in West Africa, ensuring fair trade and preservation of traditional wax-print techniques.
+                        </p>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<section class="flex-grow">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-20 gap-x-12">
+<!-- Product Card 1 -->
+<article class="group relative">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low relative">
+<img alt="Ankara Dress" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stunning model wearing a high-fashion vibrant orange and blue Ankara print maxi dress in a minimalist studio setting with architectural shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvb4o0_mG3qpQvKWiT5GUr5E6lLZnxSclemMM9Fcyw2l39aNwJ-NlI6a09kSgnXwombyEouLxZxPKHZ_tz0VqpN2lu9i-3a6jX8KqbtOUYtoeBBHZzrkzVNQ881mB430MKlkm4snAEt1E0q-jT7RYPCy9ckJWenSZbaglpOrLGXONTZdSwhGncKR1c8PUFwlM3BoGt7aw_pJ06BSNdF8m41T487YwhuiJ-SpR7CZRWWYSMZ5kTvRm9lAY2VwfzMXQed-PouJvd9KeG"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<button class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 font-bold uppercase tracking-widest text-xs">View Details</button>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-serif text-lg text-on-background">The Olowalu Wrap</h3>
+<p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Women's Wear</p>
+</div>
+<span class="font-serif text-primary text-lg">$245</span>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group relative">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low relative">
+<img alt="Ankara Suit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern tailored men's blazer in deep ochre and charcoal Ankara pattern, paired with dark trousers, editorial lighting, dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUEYQFJ3XTprE6TRFI-5gaGRm268YhyRUX109JGvXsHKsuRGq2VqbBZ9P5w2TI0Gu9QPs6pD0YTLdtdqEusnPMmpXuPj49VYXPjpJuBm7jSlnUt7SQ18ytFmvX123vF0H1z46uzfPpYU1VUAgMondRE14Ue81bpxfOOb2VMcALBaRe03AbCi6zMLHkPrqMFmnEDa3TLhrjggYVzNeYVaEvgM7-5RkKf8kORN7XkR-cZeJi2pW7zP5mmJKZgeWgOdRUWb8VHyUqtm1n"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<button class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 font-bold uppercase tracking-widest text-xs">View Details</button>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-serif text-lg text-on-background">Heritage Blazer</h3>
+<p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Men's Wear</p>
+</div>
+<span class="font-serif text-primary text-lg">$310</span>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group relative">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low relative">
+<img alt="Ankara Midi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant midi-length Ankara dress with geometric green and gold patterns, cinched waist, luxury editorial look, warm studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-r4d0tqPUTChCaOXxH-l7Mkb39MxKKsNZxvDoBJ_sGHGmHRfKgPfpS6AbgDcSZPAID3m79eD1Z-8AAx_yMWzsC42k3bkLHBcH3GkExaDE3mmykgNl3BK7ad_GDV18mpI0dyImluJK74dTLBJD07KgaxJ17Aod-pihhmn-X-VBjr4hfosPh5YMJV6_CrsF2Y5Rgty0BAWswWgSoFhW0gifJH0ZQ1xovoHkwyrFveLhttSU72cVeKQ6sr5NY66HpbwyuhBClwXcpRtq"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<button class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 font-bold uppercase tracking-widest text-xs">View Details</button>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-serif text-lg text-on-background">Zaria Midi Gown</h3>
+<p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Women's Wear</p>
+</div>
+<span class="font-serif text-primary text-lg">$195</span>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group relative md:mt-12">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low relative">
+<img alt="Ankara Accessory" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury headwrap and matching silk scarf in intricate purple and gold Ankara pattern, styled on a wooden bust, soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv6ZUN6XDjPKR0dQUWlcrpBbyis2aes2nhHYvJ-NDxpy5FWmSgCadWB92kg4LeitUBJqUJLFPsGqXflNm44u33gCuGgByYloqHyEqxuTClYclnkpJjKvQYaRZ2cEH69ShnhygmShApxm3AbTg8XKzEdnPBdK9hCbKi_HujvPvAwHcKvdYqsYb4I5DOoKPgrgktR4Zf7JWO4FixnMwWm30_ZZbZ7Xv6wRnKa_EsTIRSWGovRvzCahalzO4_SX1-xQ8xiEwz1zvWLWpE"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<button class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 font-bold uppercase tracking-widest text-xs">View Details</button>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-serif text-lg text-on-background">Gele Set: Royal</h3>
+<p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Accessories</p>
+</div>
+<span class="font-serif text-primary text-lg">$85</span>
+</div>
+</article>
+<!-- Product Card 5 -->
+<article class="group relative md:mt-12">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low relative">
+<img alt="Ankara Jumpsuit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Wide-leg Ankara jumpsuit with dramatic bell sleeves in warm earth tones, styled in a sunlit loft, high fashion aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvwU332YcJ4VRfZ_RrqkL1d3zM_G-z_4oost7D4wiXDAFDpqzsvZLYUC5UxIA9OLm9MSJ3Ulscg5yiZ4BQuMCxQ09cSygbwmm3xElhCbwbURawRbqBRDBQ13ilAsDC_l4j4xF8TN0yh6N_us5WU2OA8gqySX-31-V6OZBP1zUQptk87I4EFSZ4WA8_RMnfYupm-H7kUGgK8sKPmjsjDcVpQYxWr0Pnrg2-nf9ZFUQbzyYp_3o5i77D4e0S8iDpxhOzirLelMtLK2U3"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<button class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 font-bold uppercase tracking-widest text-xs">View Details</button>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-serif text-lg text-on-background">Sahara Jumpsuit</h3>
+<p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Women's Wear</p>
+</div>
+<span class="font-serif text-primary text-lg">$275</span>
+</div>
+</article>
+<!-- Product Card 6 -->
+<article class="group relative md:mt-12">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low relative">
+<img alt="Custom Suit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Bespoke men's two-piece suit in dark blue and gold Ankara, detailed tailoring shot, luxurious fabric texture visible, professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7xlD3CXN_UtUPz-m_xt_MdodvhlwxLvOEEyQrY-0jkzbXBCOv3us231x3aMOTKtP8QHxityeosMTn8ed73ZxsqyZLs4T37cp6qe3v7aLyFe3P2zC48lGVwYHdv_FcktrJ1fzJQIhinmirtMOzxjjWECUFPSWFBv8cowyvbigwQQ2OQxRjTRcxtubShNW2OKYsYXGg-lvC5d_rhOU1GKXCNm-rEWexJjsHZ2uvVHmPEQbmTjd0bJy_Ie96fr1Sck7pToCWnTYa5VjQ"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<button class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 font-bold uppercase tracking-widest text-xs">View Details</button>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-serif text-lg text-on-background">Imperial Two-Piece</h3>
+<p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Bespoke</p>
+</div>
+<span class="font-serif text-primary text-lg">$450</span>
+</div>
+</article>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200/20 bg-stone-100 dark:bg-stone-900 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="font-serif text-xl text-[#775a19]">Aura Ankara</div>
+<p class="text-[11px] font-sans uppercase tracking-widest text-stone-500 leading-loose max-w-xs">
+                    Curating African excellence through textile art. Modern silhouettes meet timeless heritage.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<p class="font-sans uppercase tracking-widest text-[11px] text-stone-900 font-bold">Follow</p>
+<ul class="space-y-2">
+<li><a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Instagram</a></li>
+<li><a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Pinterest</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<p class="font-sans uppercase tracking-widest text-[11px] text-stone-900 font-bold">Contact</p>
+<ul class="space-y-2">
+<li><a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">WhatsApp</a></li>
+<li><a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<p class="font-sans uppercase tracking-widest text-[11px] text-stone-900 font-bold">Newsletter</p>
+<div class="flex border-b border-stone-300 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-[11px] uppercase tracking-widest w-full" placeholder="YOUR EMAIL" type="email"/>
+<button class="text-stone-900">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<p class="text-[10px] text-stone-400">© 2024 Aura Ankara. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- FAB for Bespoke (Contextual) -->
+<button class="fixed bottom-12 right-12 bg-primary text-on-primary p-6 shadow-2xl z-40 group overflow-hidden">
+<div class="flex items-center space-x-3 relative z-10">
+<span class="material-symbols-outlined">edit_square</span>
+<span class="uppercase tracking-widest text-xs font-bold">Book a Consult</span>
+</div>
+<div class="absolute inset-0 bg-primary-container translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+</button>
+</body></html>

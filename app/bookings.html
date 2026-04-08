@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e3e3de",
+                        "background": "#fafaf5",
+                        "secondary-container": "#fed488",
+                        "on-primary-fixed": "#390c00",
+                        "primary-fixed-dim": "#ffb59d",
+                        "surface-container-highest": "#e3e3de",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-surface-variant": "#57423b",
+                        "outline": "#8b716a",
+                        "surface-dim": "#dadad5",
+                        "on-secondary-container": "#785a1a",
+                        "outline-variant": "#dec0b7",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#65747f",
+                        "tertiary-fixed": "#d5e5f1",
+                        "on-tertiary-fixed-variant": "#3a4953",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e8e8e3",
+                        "on-tertiary-container": "#f3f9ff",
+                        "surface": "#fafaf5",
+                        "surface-container-low": "#f4f4ef",
+                        "primary-fixed": "#ffdbd0",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdea5",
+                        "tertiary": "#4c5c66",
+                        "inverse-on-surface": "#f1f1ec",
+                        "on-tertiary-fixed": "#0e1d26",
+                        "inverse-primary": "#ffb59d",
+                        "surface-container": "#eeeee9",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#fff7f5",
+                        "inverse-surface": "#2f312e",
+                        "secondary": "#775a19",
+                        "on-primary-fixed-variant": "#832700",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-tint": "#a53c14",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#261900",
+                        "primary": "#9e370f",
+                        "on-surface": "#1a1c19",
+                        "on-background": "#1a1c19",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#b9c9d5",
+                        "primary-container": "#bf4f26",
+                        "surface-bright": "#fafaf5",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .editorial-shadow {
+            box-shadow: 0 40px 40px -5px rgba(26, 28, 25, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fafaf5]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline italic text-[#775a19]">Aura Ankara</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-headline tracking-tight text-stone-600 hover:text-[#775a19] transition-colors duration-300" href="/">Home</a>
+<a class="font-headline tracking-tight text-stone-600 hover:text-[#775a19] transition-colors duration-300" href="/products.html">Shop</a>
+<a class="font-headline tracking-tight text-stone-600 hover:text-[#775a19] transition-colors duration-300" href="/trustees.html">Trustees</a>
+<a class="font-headline tracking-tight text-stone-600 hover:text-[#775a19] transition-colors duration-300" href="/events.html">Events</a>
+<a class="font-headline tracking-tight text-[#9e370f] border-b-2 border-[#9e370f] pb-1" href="/bookings.html">Bookings</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-stone-600 cursor-pointer">shopping_bag</span>
+<span class="material-symbols-outlined text-stone-600 cursor-pointer">person</span>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Event Marquee -->
+<div class="w-full bg-secondary py-3 overflow-hidden border-y border-outline-variant/20">
+<div class="marquee-container">
+<div class="marquee-content text-[11px] font-label uppercase tracking-[0.3em] text-on-secondary">
+                    Exclusive Trunk Show: Lagos Fashion Week • Bespoke Fitting Appointments Now Open • Aura Ankara Heritage Collection Launch • Global Shipping Available • Visit our Victoria Island Atelier • Exclusive Trunk Show: Lagos Fashion Week • Bespoke Fitting Appointments Now Open • Aura Ankara Heritage Collection Launch • Global Shipping Available • Visit our Victoria Island Atelier • 
+                </div>
+</div>
+</div>
+<section class="max-w-screen-2xl mx-auto px-12 py-24 grid grid-cols-1 lg:grid-cols-12 gap-24">
+<!-- Left Column: Title & Heritage Imagery -->
+<div class="lg:col-span-5 space-y-12">
+<h1 class="text-6xl md:text-8xl font-headline leading-[0.9] tracking-tighter text-on-surface">
+                    Bespoke Experience: <span class="italic text-primary italic">Inquiries &amp; Bookings</span>
+</h1>
+<div class="relative pt-12">
+<div class="bg-surface-variant/20 p-8 border-l border-primary">
+<p class="text-lg leading-relaxed text-tertiary">
+                            Step into the world of Aura Ankara. Whether you seek a custom masterpiece for a grand occasion or a personal style consultation, our artisans are ready to bring your vision to life.
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-12">
+<img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="close-up of vibrant high-quality Ankara fabric with intricate patterns in gold and terracotta tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB64t1Zt6HTblhjFtRTnvLn-0aYXp4glXbc_b6YSg_tUf3tLiuGNQ2SbvF1ELJErRBftob5t9EILNKJ_bGtOA4unryVkSqyi37yMyY9K_7jkm1ahb4UV60hOXYUcjy-GqBxcepqGfIQPg9om5c-EYQR2Iad31VVj8rFLpH8iAM9HS6U-zd8z4VBv0uoZ9-JzhX4-SJnpO6eZU3LO1oTpoE4Altbzbmn60xXg7qjciaKzGYYPT5ZgSgcEO6qxZy2WyEjY2fput2opa24"/>
+<img class="w-full aspect-[3/4] object-cover mt-12 grayscale hover:grayscale-0 transition-all duration-700" data-alt="professional tailor measuring a luxury garment on a mannequin in a sunlit high-end studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6udMpEqkHLhP0hzZycG4KKJkBW5xH--Zt5ZLbHFQWAdBBQovKX0OUQauwXvmHZSEnaIggKtgJ0bQXZIsmMqfoP-ZYFqadtAKbwxgzeQ-PPxVhmrUvh3TS9AD-e93n0z8fTGHlQ7DmyxDbMDcYaJ90RFk3Hdkqu0F9pvblFVWzOTtANXi--ipedo-ho2_zQL7gfdXQ0t4RkuBqXnv6ysrF7o7JiPX6zvkY4OP997K1uTsQYUXryLXJoZKt_ahjbGSAYnMrM42ZtjTw"/>
+</div>
+</div>
+<!-- Right Column: Booking Form & Contact -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-low p-12 lg:p-20 editorial-shadow border-t-4 border-primary">
+<form class="space-y-10" id="bookingForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="space-y-2">
+<label class="text-[11px] font-label uppercase tracking-widest text-outline">Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-all duration-300" name="name" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[11px] font-label uppercase tracking-widest text-outline">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-all duration-300" name="email" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[11px] font-label uppercase tracking-widest text-outline">Appointment Type</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-all duration-300 appearance-none" name="type" required="">
+<option disabled="" selected="" value="">Select an option</option>
+<option value="bespoke">Bespoke Fitting</option>
+<option value="style">Style Consultation</option>
+<option value="inquiry">General Inquiry</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-[11px] font-label uppercase tracking-widest text-outline">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-all duration-300 resize-none" name="message" required="" rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="w-full md:w-auto px-12 py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary uppercase tracking-[0.2em] font-label text-sm hover:opacity-90 transition-all duration-300" type="submit">
+                                Send Request
+                            </button>
+</div>
+</form>
+<!-- Success Message Overlay (Hidden by default) -->
+<div class="hidden absolute inset-0 bg-surface flex flex-col items-center justify-center text-center p-12 z-10" id="successOverlay">
+<span class="material-symbols-outlined text-6xl text-primary mb-6" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<h3 class="text-3xl font-headline mb-4">Request Received</h3>
+<p class="text-tertiary max-w-sm mb-8">Your message has been shared with our concierge. We will reach out within 24 hours to finalize your experience.</p>
+<button class="border border-outline-variant px-8 py-3 uppercase tracking-widest text-[11px] hover:bg-on-surface hover:text-surface transition-all" onclick="window.location.reload()">Close</button>
+</div>
+</div>
+<!-- Contact & Map -->
+<div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div>
+<h4 class="text-[11px] font-label uppercase tracking-[0.3em] text-primary mb-4">The Atelier</h4>
+<p class="font-headline text-2xl text-on-surface leading-tight">
+                                42 Heritage Way, Victoria Island,<br/>Lagos, Nigeria
+                            </p>
+</div>
+<div class="space-y-2">
+<a class="flex items-center gap-3 text-stone-600 hover:text-primary transition-colors" href="tel:+234800000000">
+<span class="material-symbols-outlined text-sm">call</span>
+<span class="font-body">+234 800 000 0000</span>
+</a>
+<a class="flex items-center gap-3 text-stone-600 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">chat_bubble</span>
+<span class="font-body">WhatsApp Concierge</span>
+</a>
+</div>
+</div>
+<div class="aspect-square bg-surface-container relative">
+<div class="absolute inset-0 bg-stone-200 grayscale contrast-125 opacity-50 overflow-hidden" data-location="Lagos, Nigeria" style="">
+<!-- Map Placeholder Visualization -->
+<div class="w-full h-full border border-outline-variant/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-outline opacity-20">map</span>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-4 h-4 bg-primary ring-8 ring-primary/20"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 w-full border-t border-stone-200/20 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="font-serif text-xl text-[#775a19]">Aura Ankara</div>
+<p class="text-stone-500 font-sans uppercase tracking-widest text-[11px] max-w-xs">Curating African Heritage for the Modern Global Wardrobe.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h5 class="font-sans uppercase tracking-widest text-[11px] text-stone-900">Follow</h5>
+<ul class="space-y-2">
+<li><a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Instagram</a></li>
+<li><a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Pinterest</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-sans uppercase tracking-widest text-[11px] text-stone-900">Connect</h5>
+<ul class="space-y-2">
+<li><a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">WhatsApp</a></li>
+<li><a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<h5 class="font-sans uppercase tracking-widest text-[11px] text-stone-900">Newsletter</h5>
+<div class="flex gap-4">
+<input class="bg-transparent border-0 border-b border-stone-300 focus:ring-0 focus:border-[#9e370f] w-full py-2 text-[11px]" placeholder="YOUR EMAIL" type="email"/>
+<button class="text-[#9e370f] uppercase tracking-widest text-[11px] font-bold">Join</button>
+</div>
+<p class="text-stone-400 font-sans uppercase tracking-widest text-[9px] mt-12">© 2024 Aura Ankara. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple validation check
+            const inputs = this.querySelectorAll('input[required], select[required], textarea[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.classList.add('border-error');
+                } else {
+                    input.classList.remove('border-error');
+                }
+            });
+
+            if (isValid) {
+                document.getElementById('successOverlay').classList.remove('hidden');
+                document.getElementById('successOverlay').classList.add('flex');
+            }
+        });
+    </script>
+<script type="module" src="/main.js"></script>
+</body></html>

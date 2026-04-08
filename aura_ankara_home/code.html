@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Ankara | Heritage Modernist Fashion</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#e3e3de",
+                      "background": "#fafaf5",
+                      "secondary-container": "#fed488",
+                      "on-primary-fixed": "#390c00",
+                      "primary-fixed-dim": "#ffb59d",
+                      "surface-container-highest": "#e3e3de",
+                      "secondary-fixed-dim": "#e9c176",
+                      "on-surface-variant": "#57423b",
+                      "outline": "#8b716a",
+                      "surface-dim": "#dadad5",
+                      "on-secondary-container": "#785a1a",
+                      "outline-variant": "#dec0b7",
+                      "on-error": "#ffffff",
+                      "tertiary-container": "#65747f",
+                      "tertiary-fixed": "#d5e5f1",
+                      "on-tertiary-fixed-variant": "#3a4953",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-high": "#e8e8e3",
+                      "on-tertiary-container": "#f3f9ff",
+                      "surface": "#fafaf5",
+                      "surface-container-low": "#f4f4ef",
+                      "primary-fixed": "#ffdbd0",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed": "#ffdea5",
+                      "tertiary": "#4c5c66",
+                      "inverse-on-surface": "#f1f1ec",
+                      "on-tertiary-fixed": "#0e1d26",
+                      "inverse-primary": "#ffb59d",
+                      "surface-container": "#eeeee9",
+                      "on-error-container": "#93000a",
+                      "on-primary-container": "#fff7f5",
+                      "inverse-surface": "#2f312e",
+                      "secondary": "#775a19",
+                      "on-primary-fixed-variant": "#832700",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "surface-tint": "#a53c14",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed": "#261900",
+                      "primary": "#9e370f",
+                      "on-surface": "#1a1c19",
+                      "on-background": "#1a1c19",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#b9c9d5",
+                      "primary-container": "#bf4f26",
+                      "surface-bright": "#fafaf5",
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Noto Serif"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/20">
+<!-- Event Marquee -->
+<div class="fixed top-0 w-full z-[60] bg-primary text-on-primary py-2 overflow-hidden border-none">
+<div class="flex items-center">
+<div class="marquee flex gap-12 font-label text-[10px] uppercase tracking-[0.3em]">
+<span>NEXT RUNWAY SHOW: Lagos Fashion Week, Oct 2026. Book your front-row seat now!</span>
+<span>NEXT RUNWAY SHOW: Lagos Fashion Week, Oct 2026. Book your front-row seat now!</span>
+<span>NEXT RUNWAY SHOW: Lagos Fashion Week, Oct 2026. Book your front-row seat now!</span>
+<span>NEXT RUNWAY SHOW: Lagos Fashion Week, Oct 2026. Book your front-row seat now!</span>
+</div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-10 w-full z-50 bg-[#fafaf5]/80 dark:bg-stone-950/80 backdrop-blur-xl transition-colors duration-300 ease-linear">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#775a19] dark:text-[#bf4f26]">Aura Ankara</div>
+<div class="hidden md:flex gap-10 items-center font-serif tracking-tight text-stone-900 dark:text-stone-100">
+<a class="text-[#9e370f] dark:text-[#bf4f26] border-b-2 border-[#9e370f] pb-1 transition-colors duration-300 ease-linear" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-300 ease-linear" href="#">Shop</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-300 ease-linear" href="#">Trustees</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-300 ease-linear" href="#">Events</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#775a19] transition-colors duration-300 ease-linear" href="#">Bookings</a>
+</div>
+<div class="flex items-center gap-6 text-[#9e370f] dark:text-[#bf4f26]">
+<button class="material-symbols-outlined text-2xl">shopping_bag</button>
+<button class="material-symbols-outlined text-2xl">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[972px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover grayscale-[0.2] brightness-[0.8]" data-alt="Stunning editorial shot of a Black woman in a high-fashion structural Ankara gown with vibrant orange and gold geometric patterns in a minimalist studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAubjgq8JvtSSqiRM3n0if36suFqSSN1evQ5Uns_GAj7HoKfgJiTUSnaIRBuoFmfnzeCfffVbNtbN9usYcy6Zwga5siwuFFRA7LAXPaNk6Q3UCIS_EBvrY3oDQhvboT_4VZzbFT2BzVg6JILlkmWhLYr1dX_HCWLJ34LgFirByWJkxKUJiZLYdR1yIlgpZJGXUaYz8s5rBgzw79hvVH_NxqBTnIMXfUX3QvnSATgVdKXBRDs0HixiSAHQ3PYbQNrGr3KQjOFMhl7lVS"/>
+</div>
+<div class="relative z-10 px-12 w-full max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<h1 class="font-headline text-7xl md:text-9xl text-white leading-[0.9] tracking-tighter mb-8 italic">
+                        Aura Ankara: Where Tradition Meets Tomorrow
+                    </h1>
+<div class="flex gap-6 items-center">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-10 py-5 font-label uppercase tracking-widest text-xs transition-all duration-300">
+                            Shop the Collection
+                        </button>
+<button class="text-white font-label uppercase tracking-widest text-xs border-b border-white/40 pb-1 hover:border-white transition-all duration-300" onclick="document.getElementById('featured').scrollIntoView({behavior: 'smooth'})">
+                            Explore Collection
+                        </button>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator Overlay -->
+<div class="absolute bottom-12 right-12 text-white/50 vertical-text font-label text-[10px] uppercase tracking-[0.5em] [writing-mode:vertical-rl]">
+                Scroll to Discover
+            </div>
+</section>
+<!-- Heritage & Modernity Text Section -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto editorial-grid gap-12">
+<div class="col-span-12 md:col-span-5">
+<span class="text-secondary font-label uppercase tracking-[0.4em] text-[10px] mb-6 block">Our Vision</span>
+<h2 class="font-headline text-5xl md:text-6xl text-on-surface leading-tight mb-8">
+                        The art of the <span class="italic text-primary">Ancestral</span> loop.
+                    </h2>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7 flex flex-col justify-end">
+<p class="font-body text-xl text-on-surface-variant leading-relaxed mb-8">
+                        Aura Ankara isn't just a label; it's a bridge. We take the vibrant, historical narratives woven into every wax-print thread and re-contextualize them for the global modernist. Each garment is a curated dialogue between the craft of Lagos and the silhouettes of tomorrow.
+                    </p>
+<div class="h-px w-32 bg-outline-variant/30 mb-8"></div>
+<p class="font-body text-sm uppercase tracking-widest text-secondary font-bold">
+                        Established 2024 — Curating Culture
+                    </p>
+</div>
+</div>
+</section>
+<!-- Heritage Pattern Break -->
+<div class="h-48 w-full bg-surface-variant relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/az-subtle.png')]"></div>
+<div class="text-outline/20 font-headline italic text-4xl tracking-[1em] uppercase">Authenticity • Craft • Aura</div>
+</div>
+<!-- Featured Designs Section -->
+<section class="py-32 px-12 bg-surface" id="featured">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div>
+<h2 class="font-headline text-5xl md:text-7xl tracking-tighter">Featured Designs</h2>
+<p class="font-body text-on-surface-variant mt-4 text-lg">New Season: The Sahara Bloom Series</p>
+</div>
+<a class="hidden md:block font-label uppercase tracking-widest text-xs text-primary border-b border-primary/20 pb-2 hover:border-primary transition-all duration-300" href="#">View Entire Archive</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-24">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container-high relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial fashion photography of a modern Ankara blazer with structured shoulders in earth-tone patterns on a white pedestal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUQUWXFlg0ySslFh8ASKG0N0pyUThoy-RJxH0WAT3R5mDvC3rWsOjreBSRBLEJ-FlgtFc4P-24OYosF-IlGwZpj0bwxAvPtTtbr7w_lH06HEjhxZzpCiMlIEf1K-MscVzJTSy52Ewk3qbSM1go2lloLzr_ZBqkBgXn_0FLvt9qJ1blgz7VfcrAiF1nQgDsPe6ztiprggDZvE-mDkgL3k2_9_OGR8cbO0TFxaxoSXr0rOK5sA0RlNE72s-N1VzaRQG3fcdK0BGscq6B"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 font-label text-[10px] tracking-widest uppercase">Limited Edition</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors duration-300">The Monarch Blazer</h3>
+<p class="font-body text-sm text-on-surface-variant uppercase tracking-widest mt-1">Ochre &amp; Clay Series</p>
+</div>
+<span class="font-headline text-xl">$450</span>
+</div>
+</div>
+<!-- Product Card 2 (Asymmetric Shift) -->
+<div class="group cursor-pointer md:mt-24">
+<div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container-high relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up shot of high quality Ankara textile details on a draped mannequin, showing intricate indigo and copper stitching." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsJ84sBgW0OBp5s4iR5m-AvVCvcqrkdiZCQkfvjC27BEMrMMQhLNQPBLTrhMJclQUjJIbYGXnK9ZrJsb1DTo5oI2qhUzIxTY2b1WBchCjczknNXv1GTxzOAmauDnbrhmP4oIzkdn1BFPndiVPThT8FR2vT9FgtBK6DwdeJQiLHBBdwp2Zpw5vE0gWp23-evjGccd4VhTMxnGWePVAlWnqdjhF5Vohy3SzuMZqDT7CvIdHIU7RJMUC8_wATcpYm56imudbCK7ePxetv"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors duration-300">The Indigo Wrap</h3>
+<p class="font-body text-sm text-on-surface-variant uppercase tracking-widest mt-1">Deep Sea Collection</p>
+</div>
+<span class="font-headline text-xl">$320</span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container-high relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Fashion model wearing a high-waisted Ankara skirt with abstract yellow patterns, walking through an art gallery setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoCnLaxpMurHIdhCUWJ_6Z4QvaYOV5ueiYeesfvxNRmgToBnsXnHZJHE8p2fKhGDymyWJbSHVRK8gpbE7rDaEOh3MCBuRwcpapu9Op2ChE_SzPh-9I2fpE1VCP_jmxUpmcjwKMmo13Slk-Ddio6aEbXc8xc5ulk8EDqRUkVXDCBigEJZxDwTK5KbTk2CHmrmydEnwiOvL5cvFlPePGjiA-qX7l_f9BNxx5xQOmocrAIKTgu6_NbbCAVMM1YDe4FrDVOr4JC7qIPw7G"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors duration-300">Solar Flare Skirt</h3>
+<p class="font-body text-sm text-on-surface-variant uppercase tracking-widest mt-1">Sahara Bloom Series</p>
+</div>
+<span class="font-headline text-xl">$295</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Editorial CTA -->
+<section class="py-32 px-12 bg-surface-container-highest">
+<div class="max-w-screen-2xl mx-auto flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-8" data-icon="auto_awesome">auto_awesome</span>
+<h2 class="font-headline text-4xl md:text-6xl max-w-3xl leading-tight mb-12">Join the inner circle for early access to the <span class="italic">Harmattan Haute</span> collection.</h2>
+<div class="w-full max-w-md border-b border-outline-variant flex items-center py-4">
+<input class="bg-transparent border-none focus:ring-0 w-full font-label text-xs uppercase tracking-widest placeholder:text-outline-variant" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="text-primary font-label text-xs uppercase tracking-[0.3em] font-bold">Submit</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200/20 bg-stone-100 dark:bg-stone-900">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div>
+<div class="font-serif text-xl text-[#775a19] mb-8">Aura Ankara</div>
+<p class="font-sans uppercase tracking-widest text-[11px] text-stone-500 max-w-xs leading-relaxed">
+                    Elevating heritage through meticulous craft and modern silhouettes. Designed in Lagos, worn by the world.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-4">
+<a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Instagram</a>
+<a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Pinterest</a>
+<a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">WhatsApp</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Contact Us</a>
+<a class="font-sans uppercase tracking-widest text-[11px] text-stone-500 hover:text-[#9e370f] transition-all duration-300" href="#">Newsletter</a>
+</div>
+</div>
+<div class="flex flex-col md:items-end justify-between">
+<div class="font-sans uppercase tracking-widest text-[11px] text-stone-500 text-right">
+                    © 2024 Aura Ankara. All rights reserved.
+                </div>
+<div class="flex gap-4 mt-8 md:mt-0">
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">language</span>
+</div>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
